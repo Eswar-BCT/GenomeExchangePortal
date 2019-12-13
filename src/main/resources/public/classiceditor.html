@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Genome Exchange Portal </title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+</head>
+<body style="background-color:#3aa9ca">
+<a class="cd-logo" href="https://hudsonalpha.org"><img src="https://hudsonalpha.org/wp-content/uploads/2015/01/hudson-logo.png" alt="Logo"></a>
+<h2 align="center">Genome Exchange Portal</h2>
+<div id="hide">
+From:&nbsp;&nbsp;<input type="text" id="from_email" name="from_email" placeholder="From email address"></br></br>
+Subject:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="subject" name="subject" placeholder="Enter subject" size="35"></br></br>
+
+<textarea name="content" id="editor">
+      &lt;p&gt;Dear {first_name},{last_name}</br></br>
+
+    Welcome to Genome Exchange Portal.</br></br>
+    This is application under HudsonAlpha.The HudsonAlpha Institute for Biotechnology has a four-fold mission of conducting genomics-based research to improve human health and well being;
+            implementing genomic medicine, sparking economic development;
+            and providing educational outreach to nurture the next generation of biotech researchers and entrepreneurs, as well as to create a biotech literate public.</br></br></br></br>
+    Thanks & Regards,</br>
+    {Name}</br>
+    HudSonAlpha
+    &lt;/p&gt;
+
+        </textarea></br>
+<center>
+    <button type="submit" onclick="submitcontent()">Submit</button>
+</center>
+</div>
+
+<div id="demo" style="background-color:#3498DB"></div>
+<script>
+  var data;
+  ClassicEditor
+    .create(document.querySelector('#editor'))
+    .then((editor)=>{
+      data=editor
+    })
+
+    .catch(error => {
+      console.error(error);
+
+    });
+
+/*
+  function submitcontent() {
+
+         console.log(data.getData());
+var formdata=data.getData();
+     console.log(document.getElementById("from_email").value);
+     console.log(document.getElementById("subject").value);
+    var el = document.createElement( 'html' );
+    el.innerHTML =formdata;
+
+   }*/
+</script>
+</body>
+</html>

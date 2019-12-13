@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Genome Exchange Portal</title>
+    <script type="text/javascript" src="js/application.js"></script>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #566573;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div style="background-image: url('images/background.jpg');height: 100%;></div>
+<a class="cd-logo" href="https://hudsonalpha.org"><img src="https://hudsonalpha.org/wp-content/uploads/2015/01/hudson-logo.png" alt="Logo"></a>
+<center style="padding-top: 48px;">
+    <div class="col-sm-4" style="background-color :#3aa9ca; width: 410px;height: 280px;">
+        </br></br><h2 align="center">Genome Exchange Portal</h2>
+
+        User name:&nbsp;&nbsp;<input type="text" id="userName" name="userName" placeholder="User name"></br></br>
+        Password:&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="password" name="password" placeholder="Password"></br></br>
+        &nbsp;&nbsp;<button type="submit" onclick="userLogin()">Login with<font style="color: #166eda; font-size: 18px;"> Cognito</font></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit" onclick="oktaLogin()">Login with<font style="color: #166eda; font-size: 18px;"> Okta</font></button>
+      </br></br>
+        <a href="forgotpassword.html">forgot password?</a>
+</center>
+
+</div>
+<div class="footer">
+    <p>@ 2019 Bahwan CyberTek</p>
+</div>
+</body>
+</html>

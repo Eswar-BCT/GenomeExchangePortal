@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Genome Exchange Portal</title>
+	<script type="text/javascript" src="js/application.js"></script>
+	<style>
+		.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #566573;
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<br>
+<body style="background-color:#3aa9ca">
+<a class="cd-logo" href="https://hudsonalpha.org"><img src="https://hudsonalpha.org/wp-content/uploads/2015/01/hudson-logo.png" alt="Logo"></a>
+<div style="float:right">
+
+		<label class="logoutLblPos">
+			<button type="signOut" onclick="SignOut()" style=" background: #64c2e3;  font-size: 15px;"><b>SignOut</b></button>
+		</label>
+</div>
+<h2 align="center">Welcome to Genome Exchange Portal</h2></br></br>
+<center>
+	Cognito Access Token:&nbsp;&nbsp;<input type="text" id="token" name="token" placeholder="Enter your access token" required>
+	<button type="submit" onclick="verifyToken()">Verify Token</button></br></br></br>
+	Okta Access Token:&nbsp;&nbsp;<input type="text" id="okta_token" name="okta_token" placeholder="Enter your access token" required>
+
+	<button type="submit" onclick="verifyOktaToken()">Verify Token</button></br></br></br></br>
+
+<a href="classiceditor.html">Email Template Editor</a>
+</center>
+
+</body>
+<div class="footer">
+	<p>@ 2019 Bahwan CyberTek</p>
+</div>
+</html>
